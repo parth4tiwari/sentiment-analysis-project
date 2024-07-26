@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+  </head>
+  <body>
+    <!-- Video background -->
+    <video autoplay muted loop id="background-video">
+      <source src="static\204925-925628390.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Content -->
+    <div class="container">
+      <h1 id="heading">Sentiment Analyzer for Movies</h1>
+      <h1 id="subtitle">Please enter your review for the movie</h1>
+      <textarea id="inputText" placeholder="Enter text here..."></textarea>
+      <button onclick="analyzeSentiment()">Analyze Sentiment</button>
+      <div id="result"></div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
